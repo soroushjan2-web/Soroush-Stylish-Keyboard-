@@ -1,0 +1,220 @@
+/* ===== Google Font ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#4f46e5,#7c3aed,#06b6d4);
+    background-size:300% 300%;
+    animation:bgMove 12s ease infinite;
+    padding:20px;
+}
+
+@keyframes bgMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.container{
+    width:100%;
+    max-width:850px;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:25px;
+    padding:30px;
+    box-shadow:0 20px 40px rgba(0,0,0,.3);
+}
+
+h1{
+    text-align:center;
+    color:#fff;
+    margin-bottom:25px;
+    font-size:35px;
+    font-weight:700;
+}
+
+.menu{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:25px;
+}
+
+.menu button{
+
+    background:white;
+    color:#4f46e5;
+    border:none;
+    padding:13px 25px;
+    border-radius:50px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.menu button:hover{
+
+    transform:translateY(-4px);
+    background:#4f46e5;
+    color:white;
+}
+
+textarea{
+
+    width:100%;
+    height:180px;
+    border:none;
+    outline:none;
+    resize:none;
+    border-radius:18px;
+    padding:20px;
+    font-size:20px;
+    margin-bottom:20px;
+    background:white;
+}
+
+select{
+
+    width:100%;
+    padding:15px;
+    border:none;
+    outline:none;
+    border-radius:15px;
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+.buttons{
+
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.buttons button{
+
+    border:none;
+    padding:15px 28px;
+    border-radius:50px;
+    cursor:pointer;
+    font-size:17px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+#copyBtn{
+
+    background:#10b981;
+    color:white;
+}
+
+#copyBtn:hover{
+
+    background:#059669;
+    transform:scale(1.05);
+}
+
+#clearBtn{
+
+    background:#ef4444;
+    color:white;
+}
+
+#clearBtn:hover{
+
+    background:#dc2626;
+    transform:scale(1.05);
+}
+
+#output{
+
+    margin-top:25px;
+    background:white;
+    min-height:120px;
+    border-radius:18px;
+    padding:20px;
+    font-size:24px;
+    word-break:break-word;
+    transition:.3s;
+}
+
+.dark{
+
+    background:#111827 !important;
+    color:white;
+}
+
+.themeBtn{
+
+    position:absolute;
+    top:20px;
+    right:20px;
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:22px;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.themeBtn:hover{
+
+    transform:rotate(180deg);
+    transition:.5s;
+}
+
+@media(max-width:768px){
+
+.container{
+
+padding:20px;
+
+}
+
+h1{
+
+font-size:28px;
+
+}
+
+.menu button{
+
+width:100%;
+
+}
+
+.buttons button{
+
+width:100%;
+
+}
+
+textarea{
+
+font-size:18px;
+
+}
+
+#output{
+
+font-size:20px;
+
+}
+
+}
